@@ -9,6 +9,9 @@ function tikke_install() {
   // Themes
   $default_theme = 'bootstrap_sub';
   $admin_theme = 'adminimal';
+  theme_enable(array($admin_theme));
+  variable_set('admin_theme', $admin_theme);
+  variable_set('node_admin_theme', '1');
 
   $blocks = array(
     array(
