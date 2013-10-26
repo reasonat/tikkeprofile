@@ -6,8 +6,9 @@
  */
 
 function amir_install() {
-  include_once DRUPAL_ROOT . '/profiles/minimal/minimal.install';
-  minimal_install();
+  // Themes
+  $default_theme = 'bootstrap_sub';
+  $admin_theme = 'adminimal';
 
   $blocks = array(
     array(
