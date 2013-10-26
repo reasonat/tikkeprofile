@@ -3,6 +3,14 @@ name = "Amir"
 description = "TIKKE Installation profile"
 version = VERSION
 core = "7.x"
+
+; Need to add this: 
+; tvi 
+; bxslider_views_slideshow 
+; views_slideshow 
+; better_formats
+
+
 ; ----------
 ; Dependencies
 ; ----------
@@ -43,6 +51,7 @@ dependencies[] = user
 dependencies[] = email
 dependencies[] = field_group
 dependencies[] = link
+dependencies[] = multiupload_filefield_widget
 ; Flags
 dependencies[] = flag
 ; Media
@@ -51,7 +60,13 @@ dependencies[] = media
 dependencies[] = media_internet
 dependencies[] = media_wysiwyg_view_mode
 dependencies[] = mediafield
+dependencies[] = dragndrop_upload
+dependencies[] = dragndrop_upload_element
+dependencies[] = dragndrop_upload_file
+dependencies[] = dragndrop_upload_image
+dependencies[] = dragndrop_upload_multi
 ; Other
+dependencies[] = better_formats
 dependencies[] = backup_migrate
 dependencies[] = entity
 dependencies[] = entity_token
@@ -60,8 +75,11 @@ dependencies[] = menu_block
 dependencies[] = module_filter
 dependencies[] = pathauto
 dependencies[] = token
+dependencies[] = tvi
 ; Path management
 dependencies[] = globalredirect
+; Performences
+dependencies[] = boost
 ; Rules
 dependencies[] = rules
 dependencies[] = rules_admin
@@ -80,6 +98,7 @@ dependencies[] = wysiwyg
 dependencies[] = views
 dependencies[] = views_bulk_operations
 dependencies[] = views_ui
+dependencies[] = views_slideshow
 ; Webform
 dependencies[] = webform
 ; XML sitemap
