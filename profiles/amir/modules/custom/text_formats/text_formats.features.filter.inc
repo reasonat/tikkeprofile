@@ -18,6 +18,11 @@ function text_formats_filter_default_formats() {
     'status' => 1,
     'weight' => 0,
     'filters' => array(
+      'ckeditor_link_filter' => array(
+        'weight' => 0,
+        'status' => 1,
+        'settings' => array(),
+      ),
       'filter_url' => array(
         'weight' => 0,
         'status' => 1,
@@ -39,6 +44,11 @@ function text_formats_filter_default_formats() {
         'status' => 1,
         'settings' => array(),
       ),
+      'media_filter' => array(
+        'weight' => 2,
+        'status' => 1,
+        'settings' => array(),
+      ),
       'filter_htmlcorrector' => array(
         'weight' => 10,
         'status' => 1,
@@ -55,6 +65,11 @@ function text_formats_filter_default_formats() {
     'status' => 1,
     'weight' => 1,
     'filters' => array(
+      'ckeditor_link_filter' => array(
+        'weight' => 0,
+        'status' => 1,
+        'settings' => array(),
+      ),
       'filter_url' => array(
         'weight' => 0,
         'status' => 1,
@@ -64,6 +79,11 @@ function text_formats_filter_default_formats() {
       ),
       'filter_autop' => array(
         'weight' => 1,
+        'status' => 1,
+        'settings' => array(),
+      ),
+      'media_filter' => array(
+        'weight' => 2,
         'status' => 1,
         'settings' => array(),
       ),
