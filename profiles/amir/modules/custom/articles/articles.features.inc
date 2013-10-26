@@ -1,20 +1,20 @@
 <?php
 /**
  * @file
- * test_feature.features.inc
+ * articles.features.inc
  */
 
 /**
  * Implements hook_views_api().
  */
-function test_feature_views_api($module = NULL, $api = NULL) {
+function articles_views_api($module = NULL, $api = NULL) {
   return array("api" => "3.0");
 }
 
 /**
  * Implements hook_node_info().
  */
-function test_feature_node_info() {
+function articles_node_info() {
   $items = array(
     'article' => array(
       'name' => t('Article'),
