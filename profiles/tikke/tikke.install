@@ -5,7 +5,7 @@
  * Perform actions to set up the site for this profile.
  */
 
-function amir_install() {
+function tikke_install() {
   // Themes
   $default_theme = 'bootstrap_sub';
   $admin_theme = 'adminimal';

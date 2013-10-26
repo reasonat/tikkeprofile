@@ -1,15 +1,10 @@
-; Packaging information for amir
-name = "Amir"
+; Packaging information for tikke
+name = "Tikke"
 description = "TIKKE Installation profile"
 version = VERSION
 core = "7.x"
 
 ; Need to add this: 
-; tvi 
-; bxslider_views_slideshow 
-; views_slideshow 
-; better_formats
-
 
 ; ----------
 ; Dependencies
@@ -55,19 +50,19 @@ dependencies[] = multiupload_filefield_widget
 ; Flags
 dependencies[] = flag
 ; Media
-dependencies[] = file_entity
-dependencies[] = media
-dependencies[] = media_internet
-dependencies[] = media_wysiwyg_view_mode
-dependencies[] = mediafield
 dependencies[] = dragndrop_upload
 dependencies[] = dragndrop_upload_element
 dependencies[] = dragndrop_upload_file
 dependencies[] = dragndrop_upload_image
 dependencies[] = dragndrop_upload_multi
+dependencies[] = file_entity
+dependencies[] = media
+dependencies[] = media_internet
+dependencies[] = media_wysiwyg_view_mode
+dependencies[] = mediafield
 ; Other
-dependencies[] = better_formats
 dependencies[] = backup_migrate
+dependencies[] = better_formats
 dependencies[] = entity
 dependencies[] = entity_token
 dependencies[] = libraries
@@ -78,8 +73,6 @@ dependencies[] = token
 dependencies[] = tvi
 ; Path management
 dependencies[] = globalredirect
-; Performences
-dependencies[] = boost
 ; Rules
 dependencies[] = rules
 dependencies[] = rules_admin
@@ -95,10 +88,12 @@ dependencies[] = ckeditor_link
 dependencies[] = jquery_update
 dependencies[] = wysiwyg
 ; Views
+dependencies[] = bxslider_views_slideshow
 dependencies[] = views
 dependencies[] = views_bulk_operations
-dependencies[] = views_ui
 dependencies[] = views_slideshow
+dependencies[] = views_slideshow_cycle
+dependencies[] = views_ui
 ; Webform
 dependencies[] = webform
 ; XML sitemap
@@ -109,6 +104,3 @@ dependencies[] = xmlsitemap_node
 dependencies[] = xmlsitemap_taxonomy
 ; Features
 dependencies[] = features
-
-files[] = amir.profile
-

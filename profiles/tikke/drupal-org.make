@@ -4,7 +4,7 @@ api = 2
 distribution_name = Amir profile
 exclusive = 1
 
-; Install necessary core modules.
+; +++++ Modules +++++
 
 projects[admin_menu][version] = "3.0-rc4"
 projects[admin_menu][subdir] = "contrib"
@@ -27,8 +27,14 @@ projects[field_group][subdir] = "contrib"
 projects[link][version] = "1.1"
 projects[link][subdir] = "contrib"
 
+projects[multiupload_filefield_widget][version] = "1.11"
+projects[multiupload_filefield_widget][subdir] = "contrib"
+
 projects[flag][version] = "3.2"
 projects[flag][subdir] = "contrib"
+
+projects[dragndrop_upload][version] = "1.x-dev"
+projects[dragndrop_upload][subdir] = "contrib"
 
 projects[file_entity][version] = "2.0-alpha2"
 projects[file_entity][subdir] = "contrib"
@@ -38,6 +44,9 @@ projects[media][subdir] = "contrib"
 
 projects[backup_migrate][version] = "2.7"
 projects[backup_migrate][subdir] = "contrib"
+
+projects[better_formats][version] = "1.0-beta1"
+projects[better_formats][subdir] = "contrib"
 
 projects[entity][version] = "1.2"
 projects[entity][subdir] = "contrib"
@@ -57,8 +66,14 @@ projects[pathauto][subdir] = "contrib"
 projects[token][version] = "1.5"
 projects[token][subdir] = "contrib"
 
+projects[tvi][version] = "1.0-beta3"
+projects[tvi][subdir] = "contrib"
+
 projects[globalredirect][version] = "1.5"
 projects[globalredirect][subdir] = "contrib"
+
+projects[boost][version] = "1.0-beta2"
+projects[boost][subdir] = "contrib"
 
 projects[rules][version] = "2.5"
 projects[rules][subdir] = "contrib"
@@ -81,11 +96,17 @@ projects[jquery_update][subdir] = "contrib"
 projects[wysiwyg][version] = "2.2"
 projects[wysiwyg][subdir] = "contrib"
 
+projects[bxslider_views_slideshow][version] = "1.50"
+projects[bxslider_views_slideshow][subdir] = "contrib"
+
 projects[views][version] = "3.7"
 projects[views][subdir] = "contrib"
 
 projects[views_bulk_operations][version] = "3.1"
 projects[views_bulk_operations][subdir] = "contrib"
+
+projects[views_slideshow][version] = "3.0"
+projects[views_slideshow][subdir] = "contrib"
 
 projects[webform][version] = "3.19"
 projects[webform][subdir] = "contrib"
@@ -94,6 +115,11 @@ projects[xmlsitemap][version] = "2.0-rc2"
 projects[xmlsitemap][subdir] = "contrib"
 
 ; +++++ Themes +++++
+
+; adminimal_theme
+projects[adminimal_theme][type] = "theme"
+projects[adminimal_theme][version] = "1.x-dev"
+projects[adminimal_theme][subdir] = "contrib"
 
 ; bootstrap
 projects[bootstrap][type] = "theme"

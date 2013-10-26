@@ -1,4 +1,4 @@
-; amir make file for local development
+; tikke make file for local development
 core = "7.x"
 api = "2"
 
