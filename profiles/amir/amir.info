@@ -1,7 +1,7 @@
 ; Packaging information for amir
 name = "Amir"
-description = "Amir make file"
-exclusive = "1"
+description = "TIKKE Installation profile"
+version = VERSION
 core = "7.x"
 ; ----------
 ; Dependencies
@@ -90,4 +90,6 @@ dependencies[] = xmlsitemap_node
 dependencies[] = xmlsitemap_taxonomy
 ; Features
 dependencies[] = features
+
+files[] = amir.profile
 
