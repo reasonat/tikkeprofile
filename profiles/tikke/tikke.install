@@ -6,14 +6,22 @@
  */
 
 function tikke_install() {
-  // Themes
-  $default_theme = 'bootstrap_sub';
-  $admin_theme = 'adminimal';
-  theme_enable(array($admin_theme, $default_theme));
-  variable_set('admin_theme', $admin_theme);
-  variable_set('default_theme', $default_theme);
+  // Enable the Origins theme and set it as the default.
+  theme_enable(array('bootstrap_sub', 'adminimal'));
+
+    // The Bartik theme is automatically enabled during installation. Disable it.
+  db_update('system')
+    ->fields(array('status' => 0))
+    ->condition('type', 'theme')
+    ->condition('name', 'bartik')
+    ->execute();
+
+  // Set the default and administration themes.
+  variable_set('theme_default', 'bootstrap_sub');
+  // Set a default administrative theme:
+  variable_set('admin_theme', 'adminimal');
   variable_set('node_admin_theme', '1');
-}
+
   $blocks = array(
     array(
       'module' => 'system',
