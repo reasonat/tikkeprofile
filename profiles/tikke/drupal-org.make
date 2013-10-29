@@ -6,7 +6,8 @@ exclusive = 1
 
 ; +++++ Modules +++++
 
-projects[admin_menu][version] = "3.0-rc4"
+projects[admin_menu][version] = "3.x-dev"
+projects[admin_menu][patch][] = "http://drupal.org/files/admin_menu-fix_rtl-725840-34.patch"
 projects[admin_menu][subdir] = "contrib"
 
 projects[ctools][version] = "1.3"
