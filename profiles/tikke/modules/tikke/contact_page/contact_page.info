@@ -1,0 +1,13 @@
+name = contact page
+description = contact page with basic field
+core = 7.x
+package = Features
+dependencies[] = features
+dependencies[] = text
+dependencies[] = uuid_features
+__drupal_alter_by_ref[][node][webform] = webform
+features[features_api][] = api:2
+features[field_base][] = body
+features[field_instance][] = node-webform-body
+features[node][] = webform
+features[uuid_node][] = 7ffaf28e-bb31-4c5b-b4a0-d53e28560b50
