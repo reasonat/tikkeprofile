@@ -1,0 +1,8 @@
+name = editor role and editor menu
+core = 7.x
+package = Features
+dependencies[] = features
+dependencies[] = menu
+features[features_api][] = api:2
+features[menu_custom][] = menu-manage
+features[user_role][] = מנהל אתר
