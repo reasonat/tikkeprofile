@@ -1,0 +1,16 @@
+name = faq
+description = Frequently Asked Questions: content type, views
+core = 7.x
+package = Features
+dependencies[] = features
+dependencies[] = node
+dependencies[] = text
+dependencies[] = views
+dependencies[] = views_accordion
+features[ctools][] = views:views_default:3.0
+features[features_api][] = api:2
+features[field_base][] = body
+features[field_instance][] = node-faq-body
+features[node][] = faq
+features[views_view][] = faq
+features_exclude[dependencies][ctools] = ctools
