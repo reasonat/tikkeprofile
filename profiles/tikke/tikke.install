@@ -3,6 +3,7 @@
  * Implements hook_install().
  *
  * Perform actions to set up the site for this profile.
+ * 
  */
 function tikke_install() {
   // Add text formats.
