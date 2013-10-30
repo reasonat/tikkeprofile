@@ -104,3 +104,6 @@ dependencies[] = xmlsitemap_node
 dependencies[] = xmlsitemap_taxonomy
 ; Features
 dependencies[] = features
+dependencies[] = text_formats
+dependencies[] = editor_role_and_editor_menu
+

@@ -5,6 +5,15 @@
  */
 
 /**
+ * Implements hook_ctools_plugin_api().
+ */
+function articles_ctools_plugin_api($module = NULL, $api = NULL) {
+  if ($module == "strongarm" && $api == "strongarm") {
+    return array("version" => "1");
+  }
+}
+
+/**
  * Implements hook_views_api().
  */
 function articles_views_api($module = NULL, $api = NULL) {
@@ -17,11 +26,11 @@ function articles_views_api($module = NULL, $api = NULL) {
 function articles_node_info() {
   $items = array(
     'article' => array(
-      'name' => t('Article'),
+      'name' => t('כתבה'),
       'base' => 'node_content',
-      'description' => t('Use <em>articles</em> for time-sensitive content like news, press releases or blog posts.'),
+      'description' => t('מאפשר הוספת כתבה / מאמר חדשים לאתר שלך. '),
       'has_title' => '1',
-      'title_label' => t('Title'),
+      'title_label' => t('כותרת'),
       'help' => '',
     ),
   );

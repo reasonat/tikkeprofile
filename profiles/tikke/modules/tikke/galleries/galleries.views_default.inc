@@ -28,6 +28,7 @@ function galleries_views_default_views() {
   $handler->display->display_options['cache']['type'] = 'none';
   $handler->display->display_options['query']['type'] = 'views_query';
   $handler->display->display_options['exposed_form']['type'] = 'basic';
+  $handler->display->display_options['exposed_form']['options']['reset_button_label'] = 'איתחול';
   $handler->display->display_options['pager']['type'] = 'full';
   $handler->display->display_options['pager']['options']['items_per_page'] = '25';
   $handler->display->display_options['pager']['options']['offset'] = '0';
@@ -37,6 +38,10 @@ function galleries_views_default_views() {
   $handler->display->display_options['pager']['options']['expose']['items_per_page_label'] = 'כמות';
   $handler->display->display_options['pager']['options']['expose']['items_per_page_options'] = '5, 10, 25, 40, 60, 100';
   $handler->display->display_options['pager']['options']['expose']['items_per_page_options_all_label'] = '- הצגת הכל -';
+  $handler->display->display_options['pager']['options']['tags']['first'] = '« לעמוד הראשון';
+  $handler->display->display_options['pager']['options']['tags']['previous'] = '‹ לעמוד הקודם';
+  $handler->display->display_options['pager']['options']['tags']['next'] = 'לעמוד הבא ›';
+  $handler->display->display_options['pager']['options']['tags']['last'] = 'לעמוד האחרון »';
   $handler->display->display_options['style_plugin'] = 'table';
   $handler->display->display_options['style_options']['columns'] = array(
     'views_bulk_operations' => 'views_bulk_operations',
@@ -89,7 +94,7 @@ function galleries_views_default_views() {
       'empty_column' => 0,
     ),
   );
-  /* Field: Bulk operations: Content */
+  /* שדה: Bulk operations: תוכן */
   $handler->display->display_options['fields']['views_bulk_operations']['id'] = 'views_bulk_operations';
   $handler->display->display_options['fields']['views_bulk_operations']['table'] = 'node';
   $handler->display->display_options['fields']['views_bulk_operations']['field'] = 'views_bulk_operations';
@@ -221,7 +226,7 @@ function galleries_views_default_views() {
       'label' => '',
     ),
   );
-  /* Field: Content: הוספת תמונות לגלריה [העלאה מרבית] */
+  /* שדה: תוכן: הוספת תמונות לגלריה [העלאה מרבית] */
   $handler->display->display_options['fields']['field_add_images']['id'] = 'field_add_images';
   $handler->display->display_options['fields']['field_add_images']['table'] = 'field_data_field_add_images';
   $handler->display->display_options['fields']['field_add_images']['field'] = 'field_add_images';
@@ -234,59 +239,59 @@ function galleries_views_default_views() {
   );
   $handler->display->display_options['fields']['field_add_images']['delta_limit'] = '1';
   $handler->display->display_options['fields']['field_add_images']['delta_offset'] = '0';
-  /* Field: Content: Title */
+  /* שדה: תוכן: כותרת */
   $handler->display->display_options['fields']['title']['id'] = 'title';
   $handler->display->display_options['fields']['title']['table'] = 'node';
   $handler->display->display_options['fields']['title']['field'] = 'title';
   $handler->display->display_options['fields']['title']['alter']['word_boundary'] = FALSE;
   $handler->display->display_options['fields']['title']['alter']['ellipsis'] = FALSE;
-  /* Field: Content: Post date */
+  /* שדה: תוכן: Post date */
   $handler->display->display_options['fields']['created']['id'] = 'created';
   $handler->display->display_options['fields']['created']['table'] = 'node';
   $handler->display->display_options['fields']['created']['field'] = 'created';
   $handler->display->display_options['fields']['created']['label'] = 'תאריך';
   $handler->display->display_options['fields']['created']['date_format'] = 'custom';
   $handler->display->display_options['fields']['created']['custom_date_format'] = 'd/m/Y';
-  /* Field: Content: Published */
+  /* שדה: תוכן: מפורסם */
   $handler->display->display_options['fields']['status']['id'] = 'status';
   $handler->display->display_options['fields']['status']['table'] = 'node';
   $handler->display->display_options['fields']['status']['field'] = 'status';
   $handler->display->display_options['fields']['status']['label'] = 'סטאטוס';
   $handler->display->display_options['fields']['status']['type'] = 'published-notpublished';
   $handler->display->display_options['fields']['status']['not'] = 0;
-  /* Field: Content: Link */
+  /* שדה: תוכן: קישור */
   $handler->display->display_options['fields']['view_node']['id'] = 'view_node';
   $handler->display->display_options['fields']['view_node']['table'] = 'views_entity_node';
   $handler->display->display_options['fields']['view_node']['field'] = 'view_node';
   $handler->display->display_options['fields']['view_node']['label'] = 'עריכה';
   $handler->display->display_options['fields']['view_node']['text'] = 'צפייה';
-  /* Field: Content: Edit link */
+  /* שדה: תוכן: Edit link */
   $handler->display->display_options['fields']['edit_node']['id'] = 'edit_node';
   $handler->display->display_options['fields']['edit_node']['table'] = 'views_entity_node';
   $handler->display->display_options['fields']['edit_node']['field'] = 'edit_node';
   $handler->display->display_options['fields']['edit_node']['label'] = '';
   $handler->display->display_options['fields']['edit_node']['element_label_colon'] = FALSE;
   $handler->display->display_options['fields']['edit_node']['text'] = 'עריכה';
-  /* Field: Content: Delete link */
+  /* שדה: תוכן: Delete link */
   $handler->display->display_options['fields']['delete_node']['id'] = 'delete_node';
   $handler->display->display_options['fields']['delete_node']['table'] = 'views_entity_node';
   $handler->display->display_options['fields']['delete_node']['field'] = 'delete_node';
   $handler->display->display_options['fields']['delete_node']['label'] = '';
   $handler->display->display_options['fields']['delete_node']['element_label_colon'] = FALSE;
   $handler->display->display_options['fields']['delete_node']['text'] = 'מחיקה';
-  /* Sort criterion: Content: Post date */
+  /* Sort criterion: תוכן: Post date */
   $handler->display->display_options['sorts']['created']['id'] = 'created';
   $handler->display->display_options['sorts']['created']['table'] = 'node';
   $handler->display->display_options['sorts']['created']['field'] = 'created';
   $handler->display->display_options['sorts']['created']['order'] = 'DESC';
-  /* Filter criterion: Content: Type */
+  /* Filter criterion: תוכן: סוג */
   $handler->display->display_options['filters']['type']['id'] = 'type';
   $handler->display->display_options['filters']['type']['table'] = 'node';
   $handler->display->display_options['filters']['type']['field'] = 'type';
   $handler->display->display_options['filters']['type']['value'] = array(
     'gallery' => 'gallery',
   );
-  /* Filter criterion: Content: Title */
+  /* Filter criterion: תוכן: כותרת */
   $handler->display->display_options['filters']['title']['id'] = 'title';
   $handler->display->display_options['filters']['title']['table'] = 'node';
   $handler->display->display_options['filters']['title']['field'] = 'title';
@@ -301,7 +306,7 @@ function galleries_views_default_views() {
     1 => 0,
     3 => 0,
   );
-  /* Filter criterion: Content: Published */
+  /* Filter criterion: תוכן: מפורסם */
   $handler->display->display_options['filters']['status']['id'] = 'status';
   $handler->display->display_options['filters']['status']['table'] = 'node';
   $handler->display->display_options['filters']['status']['field'] = 'status';
@@ -331,24 +336,23 @@ function galleries_views_default_views() {
     t('ניהול גלריות'),
     t('more'),
     t('Apply'),
-    t('Reset'),
+    t('איתחול'),
     t('Sort by'),
     t('Asc'),
     t('Desc'),
     t('כמות'),
     t('- הצגת הכל -'),
     t('Offset'),
-    t('« first'),
-    t('‹ previous'),
-    t('next ›'),
-    t('last »'),
-    t('Title'),
+    t('« לעמוד הראשון'),
+    t('‹ לעמוד הקודם'),
+    t('לעמוד הבא ›'),
+    t('לעמוד האחרון »'),
+    t('כותרת'),
     t('תאריך'),
     t('סטאטוס'),
     t('עריכה'),
     t('צפייה'),
     t('מחיקה'),
-    t('כותרת'),
     t('פורסם?'),
     t('Page'),
   );
