@@ -65,7 +65,7 @@ function tikke_install() {
   // Set admin and default theme
   $enable = array(
     'theme_default' => 'bootstrap_sub',
-    'admin_theme' => 'seven',
+    'admin_theme' => 'stanley',
   );
   theme_enable($enable);
    
@@ -81,7 +81,7 @@ function tikke_install() {
 
   // Enable some openideal blocks.
   $default_theme = variable_get('theme_default', 'bootstrap_sub');
-  $admin_theme = 'seven';
+  $admin_theme = 'stanley';
   $blocks = array(
     array(
       'module' => 'system',
@@ -144,9 +144,9 @@ function tikke_install() {
   db_update('system')
     ->fields(array('status' => 1))
     ->condition('type', 'theme')
-    ->condition('name', 'seven')
+    ->condition('name', 'stanley')
     ->execute();
-  variable_set('admin_theme', 'seven');
+  variable_set('admin_theme', 'stanley');
   variable_set('node_admin_theme', '1');
 
 }

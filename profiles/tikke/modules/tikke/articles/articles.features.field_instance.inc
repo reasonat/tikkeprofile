@@ -77,7 +77,7 @@ function articles_field_default_field_instances() {
         'summary_rows' => 5,
       ),
       'type' => 'text_textarea_with_summary',
-      'weight' => 3,
+      'weight' => 2,
     ),
   );
 
@@ -85,7 +85,7 @@ function articles_field_default_field_instances() {
   $field_instances['node-article-field_image'] = array(
     'bundle' => 'article',
     'deleted' => 0,
-    'description' => '',
+    'description' => 'שדה זה מאפשר העלאה של תמונה לכתבה / שימוש בתמונה הקיימת בשרת. ',
     'display' => array(
       'default' => array(
         'label' => 'above',
@@ -127,6 +127,7 @@ function articles_field_default_field_instances() {
           'public' => 'public',
         ),
         'allowed_types' => array(
+          0 => 0,
           'audio' => 0,
           'document' => 0,
           'image' => 'image',
@@ -141,7 +142,7 @@ function articles_field_default_field_instances() {
         'progress_indicator' => 'throbber',
       ),
       'type' => 'media_generic',
-      'weight' => 1,
+      'weight' => 11,
     ),
   );
 
@@ -150,7 +151,7 @@ function articles_field_default_field_instances() {
     'bundle' => 'article',
     'default_value' => NULL,
     'deleted' => 0,
-    'description' => '',
+    'description' => 'תקציר העמוד מאפשר הצצה ראשונית לגולש וכדאי שיהיה אטרקטיבי. התקציר מופיע בעמודים הראשיים המובילים לעמוד זה. ',
     'display' => array(
       'default' => array(
         'label' => 'above',
@@ -204,10 +205,10 @@ function articles_field_default_field_instances() {
       'active' => 1,
       'module' => 'text',
       'settings' => array(
-        'rows' => 5,
+        'rows' => 4,
       ),
       'type' => 'text_textarea',
-      'weight' => 2,
+      'weight' => 1,
     ),
   );
 
@@ -215,7 +216,9 @@ function articles_field_default_field_instances() {
   // Included for use with string extractors like potx.
   t('הוספת תוכן לכתבה ');
   t('הוספת תמונה לכתבה');
+  t('שדה זה מאפשר העלאה של תמונה לכתבה / שימוש בתמונה הקיימת בשרת. ');
   t('תקציר');
+  t('תקציר העמוד מאפשר הצצה ראשונית לגולש וכדאי שיהיה אטרקטיבי. התקציר מופיע בעמודים הראשיים המובילים לעמוד זה. ');
 
   return $field_instances;
 }

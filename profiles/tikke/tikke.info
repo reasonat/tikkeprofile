@@ -60,6 +60,7 @@ dependencies[] = media
 dependencies[] = media_internet
 dependencies[] = media_wysiwyg_view_mode
 dependencies[] = mediafield
+dependencies[] = media_youtube
 ; Other
 dependencies[] = backup_migrate
 dependencies[] = better_formats
