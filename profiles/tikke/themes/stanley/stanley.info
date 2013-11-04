@@ -16,6 +16,7 @@ scripts[] = scripts.js
 stylesheets[screen][] = styles/screen.css
 stylesheets[screen][] = styles/core.css
 stylesheets[screen][] = styles/contrib.css
+stylesheets[screen][] = styles/screen-rtl.css
 
 settings[shortcut_module_link] = 1
 
