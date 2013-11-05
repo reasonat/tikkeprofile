@@ -22,3 +22,6 @@ if (!function_exists("system_form_install_select_profile_form_alter")) {
     }
   }
 }
+function tikke_setup_config() {
+  module_disable(array('overlay'),TRUE);
+}

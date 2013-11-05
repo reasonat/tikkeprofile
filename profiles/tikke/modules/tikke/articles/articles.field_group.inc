@@ -20,17 +20,17 @@ function articles_field_group_info() {
   $field_group->mode = 'form';
   $field_group->parent_name = '';
   $field_group->data = array(
-    'label' => 'ראשי',
-    'weight' => '0',
+    'label' => 'main',
+    'weight' => '7',
     'children' => array(
-      0 => 'group_texts',
-      1 => 'group_media',
+      0 => 'group_media',
+      1 => 'group_texts',
     ),
     'format_type' => 'htabs',
     'format_settings' => array(
       'formatter' => '',
       'instance_settings' => array(
-        'classes' => '',
+        'classes' => 'group-main field-group-htabs',
       ),
     ),
   );
@@ -47,19 +47,22 @@ function articles_field_group_info() {
   $field_group->parent_name = 'group_main';
   $field_group->data = array(
     'label' => 'מדיה',
-    'weight' => '10',
+    'weight' => '11',
     'children' => array(
       0 => 'field_image',
+      1 => 'field_movie',
     ),
     'format_type' => 'htab',
     'format_settings' => array(
-      'formatter' => 'closed',
+      'label' => 'מדיה',
       'instance_settings' => array(
-        'description' => '',
-        'classes' => '',
         'required_fields' => 1,
         'id' => '',
+        'classes' => 'group-media field-group-htab',
+        'description' => 'אזור זה מאפשר הוספת מדיה מסוגים שונים לעמוד. 
+סוגי המדיה הינם בהתאם להגדרת סוג התוכן ויכולים להיות, תמונה בודדת, תמונות לגלריה, סרטונים ועוד... ',
       ),
+      'formatter' => 'closed',
     ),
   );
   $export['group_media|node|article|form'] = $field_group;
@@ -74,7 +77,7 @@ function articles_field_group_info() {
   $field_group->mode = 'form';
   $field_group->parent_name = 'group_main';
   $field_group->data = array(
-    'label' => 'תכנים',
+    'label' => 'קטעי טקסט',
     'weight' => '9',
     'children' => array(
       0 => 'body',
@@ -83,13 +86,13 @@ function articles_field_group_info() {
     ),
     'format_type' => 'htab',
     'format_settings' => array(
-      'label' => 'תכנים',
+      'label' => 'קטעי טקסט',
       'instance_settings' => array(
         'required_fields' => 1,
         'id' => '',
-        'classes' => '',
-        'description' => 'אזור זה מאפשר הוספה ועריכה של כל קטעי הטקסט הקשורים לסוג התוכן ״כתבה״. </br>
-באפשרותך לערוך תכנים אלו בכל שלב, עם זאת, <strong>במידה והחלטת לא לפרסם תוכן זה יש לבחור בתפריט הימני תחת ״אפשרויות פרסום״ את המצב ״לא פורסם״</strong>. ',
+        'classes' => 'group-texts field-group-htab',
+        'description' => 'באזור זה ניתן להזין את הטקסטים השונים הקשורים בסוג התוכן הזה. 
+לכל שדה טקסט יש את המשמעות שלו המתוארת כהסבר מתחת לשדה. ',
       ),
       'formatter' => 'closed',
     ),
