@@ -7,8 +7,12 @@ $green: #56851F;
 /*
 
 /* 
- *								MEGA MENU
+ *								Overall
  *****************************************************************/ 
+table td {
+	text-align: right !important;
+}
+
 
  /* 
  *								MEGA MENU
