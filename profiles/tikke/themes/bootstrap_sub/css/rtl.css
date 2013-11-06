@@ -13,6 +13,9 @@ table td ,
 table th {
 	text-align: right !important;
 }
+body {
+	background-color: red;
+}
 
 
  /* 
