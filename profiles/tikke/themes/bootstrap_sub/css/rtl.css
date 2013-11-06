@@ -9,7 +9,8 @@ $green: #56851F;
 /* 
  *								Overall
  *****************************************************************/ 
-table td {
+table td ,
+table th {
 	text-align: right !important;
 }
 
