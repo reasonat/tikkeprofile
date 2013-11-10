@@ -286,7 +286,7 @@ function articles_views_default_views() {
       'label' => '',
     ),
   );
-  /* שדה: תוכן: הוספת תמונה לכתבה */
+  /* שדה: תוכן: הוספת תמונה לפוסט */
   $handler->display->display_options['fields']['field_image']['id'] = 'field_image';
   $handler->display->display_options['fields']['field_image']['table'] = 'field_data_field_image';
   $handler->display->display_options['fields']['field_image']['field'] = 'field_image';
@@ -402,7 +402,7 @@ function articles_views_default_views() {
   $handler->display->display_options['row_plugin'] = 'fields';
   $handler->display->display_options['defaults']['row_options'] = FALSE;
   $handler->display->display_options['defaults']['fields'] = FALSE;
-  /* שדה: תוכן: הוספת תמונה לכתבה */
+  /* שדה: תוכן: הוספת תמונה לפוסט */
   $handler->display->display_options['fields']['field_image']['id'] = 'field_image';
   $handler->display->display_options['fields']['field_image']['table'] = 'field_data_field_image';
   $handler->display->display_options['fields']['field_image']['field'] = 'field_image';
