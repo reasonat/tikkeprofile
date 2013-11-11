@@ -107,11 +107,12 @@ function faq_views_default_views() {
   /* Display: ראשי */
   $handler = $view->new_display('block', 'ראשי', 'block');
   $handler->display->display_options['defaults']['sorts'] = FALSE;
-  /* Sort criterion: תוכן: Post date */
-  $handler->display->display_options['sorts']['created']['id'] = 'created';
-  $handler->display->display_options['sorts']['created']['table'] = 'node';
-  $handler->display->display_options['sorts']['created']['field'] = 'created';
-  $handler->display->display_options['sorts']['created']['order'] = 'DESC';
+  /* Sort criterion: Draggableviews: משקל */
+  $handler->display->display_options['sorts']['weight']['id'] = 'weight';
+  $handler->display->display_options['sorts']['weight']['table'] = 'draggableviews_structure';
+  $handler->display->display_options['sorts']['weight']['field'] = 'weight';
+  $handler->display->display_options['sorts']['weight']['draggableviews_setting_view'] = 'faq:page_1';
+  $handler->display->display_options['sorts']['weight']['draggableviews_setting_new_items_bottom_list'] = 1;
   $handler->display->display_options['block_description'] = 'שאלות ותשובות';
 
   /* Display: ניהול */

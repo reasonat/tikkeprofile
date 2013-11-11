@@ -88,7 +88,20 @@ function galleries_strongarm() {
       ),
     ),
     'extra_fields' => array(
-      'form' => array(),
+      'form' => array(
+        'metatags' => array(
+          'weight' => '5',
+        ),
+        'title' => array(
+          'weight' => '0',
+        ),
+        'path' => array(
+          'weight' => '4',
+        ),
+        'xmlsitemap' => array(
+          'weight' => '3',
+        ),
+      ),
       'display' => array(),
     ),
   );
@@ -137,6 +150,13 @@ function galleries_strongarm() {
   $strongarm->name = 'node_submitted_gallery';
   $strongarm->value = 0;
   $export['node_submitted_gallery'] = $strongarm;
+
+  $strongarm = new stdClass();
+  $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
+  $strongarm->api_version = 1;
+  $strongarm->name = 'pathauto_node_gallery_pattern';
+  $strongarm->value = 'gallery/[node:nid]';
+  $export['pathauto_node_gallery_pattern'] = $strongarm;
 
   return $export;
 }

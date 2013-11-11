@@ -95,7 +95,6 @@ dependencies[] = views_bulk_operations
 dependencies[] = views_slideshow
 dependencies[] = views_slideshow_cycle
 dependencies[] = views_ui
-dependencies[] = footable
 ; Webform
 dependencies[] = webform
 ; XML sitemap
