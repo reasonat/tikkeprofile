@@ -7,7 +7,8 @@ table th{
     text-align: right !important;
 }
 
-#overlay-title{
+#overlay-title , 
+h1 {
   float: right !important;
 }
 
