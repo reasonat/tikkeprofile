@@ -23,3 +23,8 @@ h1 {
 #tasks .secondary-nav {
     float: left;
 }
+
+
+#overlay-container {
+  right: 0 !important;
+}
