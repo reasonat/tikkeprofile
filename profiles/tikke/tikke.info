@@ -89,7 +89,6 @@ dependencies[] = ckeditor_link
 dependencies[] = jquery_update
 dependencies[] = wysiwyg
 ; Views
-dependencies[] = bxslider_views_slideshow
 dependencies[] = views
 dependencies[] = views_bulk_operations
 dependencies[] = views_slideshow
