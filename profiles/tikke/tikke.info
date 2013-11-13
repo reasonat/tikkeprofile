@@ -56,7 +56,6 @@ dependencies[] = mediafield
 dependencies[] = media_youtube
 ; Other
 dependencies[] = backup_migrate
-dependencies[] = better_formats
 dependencies[] = entity
 dependencies[] = entity_token
 dependencies[] = libraries
