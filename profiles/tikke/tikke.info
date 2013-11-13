@@ -47,14 +47,7 @@ dependencies[] = email
 dependencies[] = field_group
 dependencies[] = link
 dependencies[] = multiupload_filefield_widget
-; Flags
-dependencies[] = flag
 ; Media
-dependencies[] = dragndrop_upload
-dependencies[] = dragndrop_upload_element
-dependencies[] = dragndrop_upload_file
-dependencies[] = dragndrop_upload_image
-dependencies[] = dragndrop_upload_multi
 dependencies[] = file_entity
 dependencies[] = media
 dependencies[] = media_internet
