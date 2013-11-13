@@ -64,7 +64,6 @@ dependencies[] = menu_block
 dependencies[] = module_filter
 dependencies[] = pathauto
 dependencies[] = token
-dependencies[] = tvi
 ; Path management
 dependencies[] = globalredirect
 ; Rules
@@ -84,8 +83,6 @@ dependencies[] = wysiwyg
 ; Views
 dependencies[] = views
 dependencies[] = views_bulk_operations
-dependencies[] = views_slideshow
-dependencies[] = views_slideshow_cycle
 dependencies[] = views_ui
 ; Webform
 dependencies[] = webform
