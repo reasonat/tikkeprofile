@@ -16,7 +16,7 @@ function contact_page_uuid_features_default_content() {
   'log' => '',
   'status' => 1,
   'comment' => 2,
-  'promote' => 1,
+  'promote' => 0,
   'sticky' => 0,
   'vuuid' => '563b7313-cbb7-4b92-b54c-960d2087a443',
   'type' => 'webform',
@@ -85,7 +85,7 @@ function contact_page_uuid_features_default_content() {
   ),
   'webform' => array(
     'nid' => 1,
-    'confirmation' => '',
+    'confirmation' => '<p>אנו מודים לך על יצירת הקשר,&nbsp;</p><p>נחזור אליך בהקדם האפשרי.&nbsp;</p><p>צוות האתר</p>',
     'confirmation_format' => 'filtered_html',
     'redirect_url' => '<confirmation>',
     'status' => 1,
@@ -94,7 +94,7 @@ function contact_page_uuid_features_default_content() {
     'allow_draft' => 0,
     'auto_save' => 0,
     'submit_notice' => 0,
-    'submit_text' => 'שלח',
+    'submit_text' => 'שליחה',
     'submit_limit' => -1,
     'submit_interval' => -1,
     'total_submit_limit' => -1,
@@ -104,18 +104,38 @@ function contact_page_uuid_features_default_content() {
       0 => 1,
       1 => 2,
     ),
-    'emails' => array(),
+    'emails' => array(
+      1 => array(
+        'nid' => 1,
+        'eid' => 1,
+        'email' => 3,
+        'subject' => 'default',
+        'from_name' => 'default',
+        'from_address' => 'default',
+        'template' => 'טופס זה נשלח בתאריך %date
+
+הטופס נשלח על ידי: %username
+ערכי הטופס העיקריים הינם:
+%email_values
+
+את שאר הערכים ניתן לראות באתר שלך [לא לשכוח להיות מחובר כמנהל אתר]:
+%submission_url',
+        'excluded_components' => array(),
+        'html' => 0,
+        'attachments' => 0,
+      ),
+    ),
     'components' => array(
       1 => array(
         'nid' => 1,
         'cid' => 1,
         'pid' => 0,
         'form_key' => 'name',
-        'name' => 'שם:',
+        'name' => 'שם מלא',
         'type' => 'textfield',
         'value' => '',
         'extra' => array(
-          'title_display' => 'inline',
+          'title_display' => 'before',
           'private' => 0,
           'disabled' => 0,
           'unique' => 0,
@@ -138,11 +158,11 @@ function contact_page_uuid_features_default_content() {
         'cid' => 2,
         'pid' => 0,
         'form_key' => 'phone',
-        'name' => 'טלפון:',
+        'name' => 'טלפון / פלאפון',
         'type' => 'textfield',
         'value' => '',
         'extra' => array(
-          'title_display' => 'inline',
+          'title_display' => 'before',
           'private' => 0,
           'disabled' => 0,
           'unique' => 0,
@@ -165,11 +185,11 @@ function contact_page_uuid_features_default_content() {
         'cid' => 3,
         'pid' => 0,
         'form_key' => 'e_mail',
-        'name' => 'דוא"ל',
+        'name' => 'דואר אלקטרוני',
         'type' => 'email',
         'value' => '',
         'extra' => array(
-          'title_display' => 'inline',
+          'title_display' => 'before',
           'private' => 0,
           'disabled' => 0,
           'unique' => 0,
